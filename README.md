@@ -1,16 +1,16 @@
 # 简介
 
-`webdirscan`是一个炒鸡简单的多线程Web目录扫描工具。
+`webdirscan` golang版本
+
+原版：[webdirscan](https://github.com/TuuuNya/webdirscan)
 
 # 安装
 
-使用Python语言编写
-
-第三方模块只用了`requests`,所以`clone`以后只需要安装`requests`模块即可。
+使用Golang语言编写
 
 ```
-git clone https://github.com/Strikersb/webdirscan.git
-pip install requests
+git clone https://github.com/auuunya/webdirscan
+go run main.go -u example.com
 ```
 
 安装完成。
@@ -18,25 +18,14 @@ pip install requests
 # 使用方法
 
 ```
-usage: webdirscan.py [-h] [-d SCANDICT] [-o SCANOUTPUT] [-t THREADNUM]
-                     scanSite
+usage: webdirscan.py [-u] [-d SCANDICT] [-o SCANOUTPUT] [-t THREADNUM]
 
-positional arguments:
-  scanSite              The website to be scanned
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -d SCANDICT, --dict SCANDICT
-                        Dictionary for scanning
-  -o SCANOUTPUT, --output SCANOUTPUT
-                        Results saved files
-  -t THREADNUM, --thread THREADNUM
-                        Number of threads running the program
+  -d string
+    	Dictionary for scanning (default "dict/dict.txt")
+  -o string
+    	Results saved files (default "scanned.txt")
+  -t int
+    	Number of threads running the program (default 8)
+  -u string
+    	The website to be scanned
 ```
-
-# 关于我
-
- * Author:王松_Striker
- * Team:安全盒子团队
- * QQ:954101430
- * Email:[song@secbox.cn](mailto:song@secbox.cn)
