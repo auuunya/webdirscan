@@ -18,7 +18,7 @@ go run main.go -u example.com
 # 使用方法
 
 ```
-usage: webdirscan.py [-u] [-d SCANDICT] [-o SCANOUTPUT] [-t THREADNUM]
+usage: go run main.go [-u] [-d SCANDICT] [-o SCANOUTPUT] [-t THREADNUM]
 
   -d string
     	Dictionary for scanning (default "dict/dict.txt")
